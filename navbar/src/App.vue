@@ -1,7 +1,18 @@
 <template>
   <div id="navbarapp">
     <ul class="menu">
-      <li>APP A</li><li>APP B</li>
+      <li>
+        <router-link
+          to="/app-a"
+          class="nav-link"
+          active-class="active-nav-link">APP A</router-link>
+      </li>
+      <li>
+         <router-link
+          to="/app-b"
+          class="nav-link"
+          active-class="active-nav-link">APP B</router-link>
+      </li>
     </ul>
   </div>
 </template>
