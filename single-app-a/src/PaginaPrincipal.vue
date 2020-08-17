@@ -1,28 +1,29 @@
+
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js Micro App B"/>
+    <ul>
+      <li><router-link :to="{ name: 'pagina-a' }">Página filha</router-link></li>
+    </ul>
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 110px;
+  margin-top: 60px;
+  border: 3px solid blue;
+  padding: 10px;
 }
 </style>

@@ -1,8 +1,21 @@
+// import Vue from 'vue'
+// import App from './App.vue'
+// import router from './router'
+
+// Vue.config.productionTip = false
+
+// new Vue({
+//   render: h => h(App),
+//   router
+// }).$mount('#app')
+
+
 import './set-public-path';
 import Vue from 'vue';
 import singleSpaVue from 'single-spa-vue';
 
 import App from './App.vue';
+import router from './router'
 
 Vue.config.productionTip = false;
 
@@ -20,6 +33,7 @@ const vueLifecycles = singleSpaVue({
         },
       });
     },
+    router
   },
 });
 
